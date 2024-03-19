@@ -1,5 +1,6 @@
-package assigments;
+package assigments.week5;
 
+import assigments.week6.configration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;

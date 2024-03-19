@@ -1,5 +1,6 @@
-package assigments;
+package assigments.week5;
 
+import assigments.week6.configration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -8,7 +9,6 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-import java.io.File;
 import java.io.IOException;
 
 // Go to amazon.com

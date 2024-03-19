@@ -1,5 +1,6 @@
-package assigments;
+package assigments.week5;
 
+import assigments.week6.configration;
 import org.openqa.selenium.Cookie;
 import org.testng.annotations.Test;
 

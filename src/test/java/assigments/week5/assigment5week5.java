@@ -1,6 +1,7 @@
-package assigments;
+package assigments.week5;
 
 
+import assigments.week6.configration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -10,7 +11,6 @@ import org.testng.annotations.Test;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
 
 public class assigment5week5 extends configration {
     /*

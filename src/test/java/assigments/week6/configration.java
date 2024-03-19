@@ -1,11 +1,10 @@
-package assigments;
+package assigments.week6;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.apache.logging.log4j.core.config.Configurator;
 import org.example.ActionsBot;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,19 +15,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 
 public class configration  {
 
 
 
-    public WebDriver driver;
-    protected Wait<WebDriver> wait;
+    public static WebDriver driver;
+    protected static Wait<WebDriver> wait;
     protected static Logger logger;
-    protected ActionsBot bot;
+    protected static ActionsBot bot;
     protected static JSONObject testData;
 
 
@@ -38,11 +35,12 @@ public class configration  {
 
         Configurator.initialize(null, "src/main/resources/properties/log4j2.properties");
         logger = (Logger) LogManager.getLogger(configration.class.getName());
-      //  testData =  (JSONObject) new JSONParser().parse( new FileReader("src/test/resources/testData/sample.json", StandardCharsets.UTF_8) );
+        //  testData =  (JSONObject) new JSONParser().parse( new FileReader("src/test/resources/testData/sample.json", StandardCharsets.UTF_8) );
+        beforeEach();
     }
 
-    @BeforeMethod
-    public void beforeEach() {
+   // @BeforeMethod
+    public static void beforeEach() {
         logger.info("Opening Chrome Browser");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
