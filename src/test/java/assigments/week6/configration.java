@@ -23,7 +23,7 @@ public class configration  {
 
 
     public static WebDriver driver;
-    protected static Wait<WebDriver> wait;
+    protected static WebDriverWait wait;
     protected static Logger logger;
     protected static ActionsBot bot;
     protected static JSONObject testData;

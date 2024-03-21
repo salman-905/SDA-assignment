@@ -46,4 +46,10 @@ public class ActionsBot {
         });
     }
 
-}
+    public String getText(By locator ){
+
+            logger.info("getText: "+locator);
+            return driver.findElement(locator).getText();
+        }
+    }
+
