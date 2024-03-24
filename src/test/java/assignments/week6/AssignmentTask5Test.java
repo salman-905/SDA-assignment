@@ -46,7 +46,7 @@ public class AssignmentTask5Test extends configration {
         softAssert.assertEquals(driver.findElement(checkToDo4).getText(), "Build selenium grid, buy devices, and setup a test lab - $$$");
         softAssert.assertEquals(driver.findElement(checkToDo5).getText(), "Hire an FTE to manage the lab - more $$$");
         softAssert.assertAll();
-
+        //
         //Archiving old todos
         By Archive = By.xpath("//a[text()='archive']");
         bot.click(Archive);
