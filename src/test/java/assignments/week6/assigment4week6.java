@@ -1,4 +1,4 @@
-package assigments.week6;
+package assignments.week6;
 
 
 import org.openqa.selenium.By;
@@ -39,6 +39,7 @@ public class assigment4week6 extends configration {
 
     @Test(dataProvider = "testdata")
     public void search(String decice) {
+
         wait.until(webDriver -> driver.findElement(search).isDisplayed());
         driver.findElement(search).sendKeys(decice, Keys.RETURN);
         driver.findElement(search).clear();

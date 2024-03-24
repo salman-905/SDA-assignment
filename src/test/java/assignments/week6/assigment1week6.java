@@ -1,11 +1,9 @@
-package assigments.week6;
+package assignments.week6;
 
-import org.junit.jupiter.api.AfterAll;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -18,19 +16,10 @@ import org.testng.annotations.Test;
     Then go to Amazon depending on Google
     Close the driver.
      */
-public class assigment1week6   {
-WebDriver driver;
+public class assigment1week6  extends  configration  {
 
-    @BeforeClass
 
-    public void BeforeClass()
 
-    {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("start-maximized");
-        driver = new ChromeDriver(chromeOptions);
-
-    }
     @Test( testName = "facebook")
     public void facebook()
 

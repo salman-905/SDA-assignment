@@ -1,6 +1,6 @@
-package assigments.week5;
+package assignments.week5;
 
-import assigments.week6.configration;
+import assignments.week6.configration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
